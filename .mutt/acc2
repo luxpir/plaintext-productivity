@@ -1,0 +1,23 @@
+######
+# ACC2
+######
+
+set folder="imaps://contact@domain.com"
+set spoolfile="imaps://contact@domain.com/INBOX"
+set postponed = +Drafts
+set record = +Sent
+set imap_pass=$my_email_pass
+set realname='MyName'
+set signature="~/.mutt/.sigfile"
+
+mailboxes "+0---------- domain [F2]------------"
+
+set smtp_url="smtps://contact@domain.com"
+set smtp_pass=$my_email_pass
+set from=contact@domain.com
+set hostname="mail.domain.com"
+
+# activate TLS if available on the server
+set ssl_starttls=yes
+ # always use SSL when connecting to a server
+set ssl_force_tls=yes

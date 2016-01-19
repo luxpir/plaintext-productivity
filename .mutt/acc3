@@ -1,0 +1,23 @@
+#######
+# WTW #
+#######
+
+set folder="imaps://sales@domain2.com"
+set spoolfile="+INBOX"
+set postponed = +Drafts
+set record = +Sent
+set imap_pass=$my_email_pass
+set realname='MyName'
+set signature="~/.mutt/.sigfile2"
+
+mailboxes "+1---------- domain2 [F3]--------------"
+
+set from=lspear@worldtowriters.com
+set smtp_url="smtps://sales@domain2.com"
+set smtp_pass=$my_email_pass
+set hostname="mail.domain2.com"
+
+# activate TLS if available on the server
+set ssl_starttls=yes
+ # always use SSL when connecting to a server
+set ssl_force_tls=yes

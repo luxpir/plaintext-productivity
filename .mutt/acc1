@@ -1,0 +1,28 @@
+##############
+# GMAIL EXAMPLE
+############################################
+
+set imap_user=myname@gmail.com
+set imap_pass="my-app-specific-password"
+
+set spoolfile=imaps://imap.gmail.com:993/INBOX
+set folder=imaps://imap.gmail.com:993
+
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set record="imaps://imap.gmail.com/[Gmail]/Sent"
+#set trash="imaps://imap.gmail.com/[Gmail]/Trash"
+
+# A fake mailbox for clarity in the sidebar
+mailboxes "+2---------- GM [F4]---------------"
+
+set from="myname@gmail.com"
+set realname='Myname'
+#set signature="~/.mutt/.sigfile"
+
+set smtp_url="smtp://myname@smtp.gmail.com:587/"
+set smtp_pass="my-app-specific-password"
+
+# activate TLS if available on the server
+set ssl_starttls=yes
+ # always use SSL when connecting to a server
+set ssl_force_tls=yes
